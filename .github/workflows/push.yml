@@ -62,6 +62,6 @@ jobs:
          - name: Setup VSTest.exe
            uses: Malcolmnixon/Setup-VSTest@v4
          
-         - name: RunTest
+         - name: RunTests
            working-directory: ${{env.GITHUB_WORKSPACE}}
            run: echo Test
