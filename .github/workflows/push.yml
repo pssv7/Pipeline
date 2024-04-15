@@ -54,7 +54,7 @@ jobs:
 
   test:
 
-         needs: [build,lint]
+         needs: [build, lint]
          runs-on: windows-latest
 
          steps:
@@ -64,4 +64,4 @@ jobs:
          
          - name: RunTests
            working-directory: ${{env.GITHUB_WORKSPACE}}
-           run: echo Test
+           run: VSTest.Console.exe x64\Release\UnitTest1.dll
